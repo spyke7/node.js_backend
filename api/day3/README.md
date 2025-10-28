@@ -11,28 +11,35 @@ demonstrates various HTTP methods and endpoints.
 ### GET /hello
 Returns a simple greeting message.
 **Response**:
+```
 {
 "message": "Hello, World!"
 }
+```
 
 ### GET /random
 Returns a random number between 0 and 1.
 **Response**:
-`{
+```
+{
     "random": 0.123456789
-}`
+}
+```
 
 ### GET /time
 Returns the current server time in ISO format.
 **Response**:
+```
 {
     "time": "2025-10-28T12:00:00.000Z"
 }
+```
 
 ### GET /users
 Returns a list of all users.
 **Response**:
-`[
+```
+[
     {
         "id": 1,
         "name": "Rick",
@@ -43,7 +50,8 @@ Returns a list of all users.
         "name": "Aadrija",
         "age": 22
     }
-]`
+]
+```
 
 ## How this code works
 1. **Import Express**: We use the Express.js framework for easier routing.
@@ -61,10 +69,12 @@ a database later.
 ## Testing the API
 You can test the endpoints using curl, Postman, or your browser:
 *# GET requests*
-`curl http://localhost:3000/hello
+```
+curl http://localhost:3000/hello
 curl http://localhost:3000/random
 curl http://localhost:3000/time
-curl http://localhost:3000/users`
+curl http://localhost:3000/users
+```
 
 ## Next Steps
 - Add data persistence with a database
